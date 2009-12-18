@@ -9,6 +9,8 @@ class PluginPool(object):
         self.discovered = False
         
     def discover_plugins(self):
+        if not settings.CMS_ENABLE_PLUGIN_DISCOVERY:
+            return
         if self.discovered:
             return
         for app in settings.INSTALLED_APPS:

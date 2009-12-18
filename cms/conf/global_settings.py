@@ -102,3 +102,6 @@ CMS_MODERATOR = False
 
 # Defines what character will be used for the __unicode__ handling of cms pages
 CMS_TITLE_CHARACTER = '+'
+
+# Enable plugin discovery
+CMS_ENABLE_PLUGIN_DISCOVERY = True

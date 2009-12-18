@@ -360,4 +360,11 @@ Example::
 
 	CMS_PAGE_MEDIA_PATH = 'cms_page_media/'
 
+CMS_ENABLE_PLUGIN_DISCOVERY
+---------------------------
 
+By default, the CMS will attempt to discover plugins in all installed apps.  This can cause problems with circular imports when trying to use scripts, so you can disable it by setting this to False.
+
+Example::
+
+    CMS_ENABLE_PLUGIN_DISCOVERY = True
